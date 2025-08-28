@@ -1,0 +1,21 @@
+[0;1;31mUnit nginxsystemctl.service could not be found.[0m
+[0;1;31mUnit start.service could not be found.[0m
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (]8;;file://srv954263/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Wed 2025-08-27 18:26:28 UTC; 349ms ago
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;
+    Process: 51853 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 51854 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 51856 (nginx)
+      Tasks: 5 (limit: 19147)
+     Memory: 3.7M (peak: 4.4M)
+        CPU: 19ms
+     CGroup: /system.slice/nginx.service
+             ├─[0;38;5;245m51856 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m
+             ├─[0;38;5;245m51857 "nginx: worker process"[0m
+             ├─[0;38;5;245m51858 "nginx: worker process"[0m
+             ├─[0;38;5;245m51859 "nginx: worker process"[0m
+             └─[0;38;5;245m51860 "nginx: worker process"[0m
+
+Aug 27 18:26:28 srv954263 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Aug 27 18:26:28 srv954263 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
